@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+background-color: #F28AB2;
+color: #333638;
+font-family: 'Montserrat', sans-serif;
+line-height: 1.5;
+font-size: 0.875rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.95rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 0.875rem;
+ font-weight: 600;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: #617d98;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    width: 90vw;
+    margin: 5rem 0;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 0.25rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 5px 15px #00000066;
   }
-}
+
+  .section {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  
+  .container h3 {
+    font-weight: normal;
+    text-transform: none;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+
+  .container button {
+    color: #fff;
+    display: block;
+    width: 100%;
+    border-color: transparent;
+    background: #f28ab2;
+    margin: 2rem auto 0 auto;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    letter-spacing:0.1rem;
+    border-radius:0.25rem;
+    outline: 1px solid #f28ab2cc;
+    cursor: pointer;
+  }
+  
+  .person {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+
+  .person img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px #0000001a;
+  }
+
+  .person h4 {
+    margin-bottom: 0.35rem;
+  }
+  .person p {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    .section {
+      width: 95vw;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
